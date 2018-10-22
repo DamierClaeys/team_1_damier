@@ -2,32 +2,114 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<title>Commentaar</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if lt IE 9]>
+		   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
 	</head>
 	
 	<body>
-		<header>
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="ervaringen.html">Ervaringing</a>
-				<a href="#">Commentaar</a>
+	<!-- Navbar -->
+		<div class="container">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="container">
+					
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarContent">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="navbarContent">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="ervaringen.html">Ervaringen</a></li>
+								<li class="active"><a href="commentaar.html">Commentaar</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
 			</nav>
-		</header>
-		
-		<div>
-			<h1>Commentaar</h1>
-			
-			<h2>Arthur Ruaert</h2>
-			<p>Hier komt het commentaar van Arthur.</p>
-			
-			<br>
-			
-			<h2>Thomas Soetaert</h2>
-			<p>Hier komt het commentaar van Thomas.</p>
 		</div>
 		
-		<footer>
-			<p>Deze website is gemaakt door Damier Claeys als opdracht voor Git &amp; Github</p>
-		</footer>
+	<!-- Titel -->
+		<div class="container">
+			<h1>Commentaar</h1>
+		</div>
+		
+	<!-- Accordion -->
+		<div class="container">
+			<div class="panel-group" id="accordion">
+			
+			
+				<div class="panel panel-default" id="marginaccordion">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Arthur Ruaert</a>
+						</h4>
+					</div>
+					
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<p>
+								Hier komt het commentaar van Arthur.
+							</p>
+								<br>
+							<p>	
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida eleifend nisi, id accumsan sapien imperdiet eleifend. Nam ac ultrices quam, a blandit neque. Praesent sit amet maximus sem, vitae tristique ante. Nulla facilisi. Quisque varius eros et risus cursus, vel fermentum dui sodales. Donec pellentesque justo sem. Donec cursus, ante sed pulvinar lacinia, libero justo elementum erat, sed pretium dolor sapien non urna. Duis venenatis, felis quis volutpat ultrices, massa lectus mollis nibh, vel rutrum massa magna et purus. Proin eu lorem porttitor, interdum sapien in, ornare ante. Donec bibendum accumsan nisi in semper. Sed non sem at ligula feugiat pharetra. Nulla nec ornare arcu, eget convallis diam.
+							</p>
+								<br>
+							<p>
+								In aliquet posuere mauris eu dictum. Aenean eget pretium nunc, non posuere massa. Ut in sapien venenatis sem vestibulum lobortis quis sed lectus. Suspendisse sit amet nisi enim. Mauris blandit orci enim, vel auctor odio iaculis at. Sed posuere erat magna, id lacinia turpis sagittis id. Nam varius, nisi ut auctor sodales, sapien purus pellentesque tortor, quis dictum tellus odio vel leo. Cras ut cursus libero, eu facilisis est. Ut non vehicula turpis, et posuere diam. Donec vestibulum nisl neque, vitae ultrices augue posuere ac. Pellentesque nisi nisl, vulputate eget pharetra id, efficitur at nibh. Vestibulum vel velit eros. Nulla facilisi. Sed ut ante nisi. In porttitor sodales leo, vitae varius ligula viverra eu.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default" id="marginaccordion">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Thomas Soetaert</a>
+						</h4>
+					</div>
+					
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>
+								Hier komt het commentaar van Thomas.
+							</p>
+								<br>
+							<p>	
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida eleifend nisi, id accumsan sapien imperdiet eleifend. Nam ac ultrices quam, a blandit neque. Praesent sit amet maximus sem, vitae tristique ante. Nulla facilisi. Quisque varius eros et risus cursus, vel fermentum dui sodales. Donec pellentesque justo sem. Donec cursus, ante sed pulvinar lacinia, libero justo elementum erat, sed pretium dolor sapien non urna. Duis venenatis, felis quis volutpat ultrices, massa lectus mollis nibh, vel rutrum massa magna et purus. Proin eu lorem porttitor, interdum sapien in, ornare ante. Donec bibendum accumsan nisi in semper. Sed non sem at ligula feugiat pharetra. Nulla nec ornare arcu, eget convallis diam.
+							</p>
+								<br>
+							<p>	
+								In aliquet posuere mauris eu dictum. Aenean eget pretium nunc, non posuere massa. Ut in sapien venenatis sem vestibulum lobortis quis sed lectus. Suspendisse sit amet nisi enim. Mauris blandit orci enim, vel auctor odio iaculis at. Sed posuere erat magna, id lacinia turpis sagittis id. Nam varius, nisi ut auctor sodales, sapien purus pellentesque tortor, quis dictum tellus odio vel leo. Cras ut cursus libero, eu facilisis est. Ut non vehicula turpis, et posuere diam. Donec vestibulum nisl neque, vitae ultrices augue posuere ac. Pellentesque nisi nisl, vulputate eget pharetra id, efficitur at nibh. Vestibulum vel velit eros. Nulla facilisi. Sed ut ante nisi. In porttitor sodales leo, vitae varius ligula viverra eu.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+		
+		<script src="https://code.jquery.com/jquery-1.11.0.js" integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.js"></script>
 	</body>
 </html>
